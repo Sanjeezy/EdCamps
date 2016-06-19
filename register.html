@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="register.css">
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!--Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+  <!-- Fixed navigation bar content -->
+       <nav class="fixed-nav-bar">
+     <h2 id="logo">EdCamps</h2>
+       <ul class="menu-items">
+       <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html">Home</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html#activityImgDiv">About</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/register.html">Sign up</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/catalog.html">Store</a></li>
+      </ul>
+    </nav>
+    <div id="container">
+            <div id="header">
+            <h1>Registration</h1>
+            </div>
+            <center>
+            <div id="descriptionDiv">
+                <p>Please fill out the following information to register your child.</p>
+              </div>
+        <div id="formDiv">
+         <!-- <form id="form" method="POST" action="registration.php"> -->
+         <form id="form">
+            Parent Email<br>
+          <input id="email" type="text" name="parentEmail" placeholder="Email">
+           <br>
+           <br>
+               How many children are you registering?<br>
+          <select id="childrenRegistered" type="text" name="childrenRegistered">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+        </select>
+        <br>
+        <br>
+            Child's Name<br>
+          <input id="childName" type="text" name="childName" placeholder="Child's Name">
+          <br>
+          <br>
+          Date of Birth<br>
+          <input id="dob" type="date" name="dob">
+           <br>
+           <br>
+            Camp Location<br>
+          <select id="campLocation" type="text" name="campLocation">
+                <option value="SF">San Francisco</option>
+                <option value="LA">Los Angeles</option>
+                <option value="NY">New York</option>
+        </select>
+          <br>
+          <br>
+            Parent Name<br>
+          <input id="parentName" type="text" name="parentName" placeholder="Parent's Name">
+           <br>
+           <br>
+            Parent phone #<br>
+          <input id="parentPhone" type="text" name="parentPhone" placeholder="Phone">
+           <br>
+           <br>
+            Child's Grade level<br>
+          <input id="childGrade" type="text" name="childGrade" placeholder="Grade level">
+           <br>
+           <br>
+             Speial Instructions (allergies,medications,etc.)<br>
+          <input id="specialInstruction" type="text" name="specialInstructions">
+           <br>
+           <br>
+           <u>Camp Duration</u><br>
+            <input type="radio" id="duration1" name="duration" value="1"> 1 week<br>
+            <input type="radio" id="duration2" name="duration" value="2"> 2 weeks<br>
+            <br>
+           <p>Fee:<span id="fee">$189</p></p> 
+           <button type="button" id="calcDisc">Calculate Discount</button>
+           <br>
+           <br>
+           <u>Payment Info</u>
+           <br>
+           <br>
+             Credit Card Type<br>
+            <select id="ccType" type="text" name="ccType">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Discover">Discover</option>
+                <option value="Chase">Chase</option>
+        </select>
+           <br>
+           <br>
+             Credit Card #<br>
+          <input id="ccNumber" type="text" name="ccNumber">
+           <br>
+           <br>
+             Security #<br>
+          <input id="securityCode" type="text" name="securityCode">
+           <br>
+           <br>
+            Expiration date<br>
+          <input id="expDate" type="text" name="expDate">
+           <br>
+           <br>
+            <input type="submit" name="submit" id="submit" value="Submit" />
+           <!-- <button id="submitBtn" type="button">Submit</button> -->
+        </form>
+        </div>
+    </center>
+    </div>
+    <div id="spacing">
+    </div>
+    <footer>
+        <p>&copy; All Rights Reserved</p>
+        <p id="contactUs">Contact Us: stamizharasu@scu.edu apolatnick@scu.edu</p>
+      </footer>
+    <script src="jquery.validate.min.js"></script>
+    <script src="additional-methods.min.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

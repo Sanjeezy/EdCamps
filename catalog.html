@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="catalog.css">
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <!--Google fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+  <!-- Fixed navigation bar content -->
+       <nav class="fixed-nav-bar">
+     <h2 id="logo">EdCamps</h2>
+       <ul class="menu-items">
+        <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html">Home</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html#activityImgDiv">About</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/register.html">Sign up</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/catalog.html">Store</a></li>
+      </ul>
+    </nav>
+    <center>
+    <div id="header">
+      <h1>Catalog</h1>
+    </div>
+    <div id="descriptionDiv">
+      <h3>Welcome to our store. Click the quantity buttons to add items to the cart.</h3>
+    </div>
+      </center>  
+     <div id="containerDiv">
+        <div id="img1" class="imgdiv">
+        <img class="image" src="images/backpack.jpg">
+        <button class="btn">Mesh Backpack(BP)-$39.99</button>
+        </div>
+        <div id="img2" class="imgdiv">
+        <img class="image" src="images/bottle.jpg">
+       <button class="btn">EdCamps bottle(WB)-$9.99</button>
+        </div>
+        <div id="img3" class="imgdiv">
+        <img class="image" src="images/headphones.jpg">
+        <button class="btn">Headphones(HP)-$89.99</button>
+        </div>
+        <div id="img4" class="imgdiv">
+        <img class="image" src="images/laptopCatalog.jpg">
+        <button class="btn">Laptop(LP)-$399.99</button>
+        </div>
+        <div id="img5" class="imgdiv">
+        <img class="image" src="images/shirt.jpg">
+        <button class="btn">T-Shirt(TS)-$12.99</button>
+        </div>
+        <div id="img6" class="imgdiv">
+        <img class="image" src="images/usb.jpg">
+        <button class="btn">USB Drive-$7.99</button>
+        </div>
+  
+     </div> 
+
+     <div id="checkoutDiv">
+
+      <h3 id="checkout">Checkout</h3>
+      <hr>
+      <div id="qtyDiv">
+       <div id="subtotalDiv">
+          <span>BP qty:</span>
+          <span id="backpackQty">0</span>
+          <span><button id="addBackpack" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractBackpack" class="qtyButtonSubtract">-</button></span>
+       </div>
+         <div id="subtotalDiv">
+          <span>WB qty:</span>
+          <span id="waterbottleQty">0</span>
+          <span><button id="addWaterbottle" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractWaterbottle" class="qtyButtonSubtract">-</button></span>
+       </div>
+         <div id="subtotalDiv">
+          <span>HP qty:</span>
+          <span id="headphonesQty">0</span>
+          <span><button id="addHeadphones" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractHeadphones" class="qtyButtonSubtract">-</button></span>
+       </div>
+         <div id="subtotalDiv">
+          <span>LP qty:</span>
+          <span id="laptopQty">0</span>
+          <span><button id="addLaptop" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractLaptop" class="qtyButtonSubtract">-</button></span>
+       </div>
+         <div id="subtotalDiv">
+          <span>TS qty:</span>
+          <span id="tshirtQty">0</span>
+          <span><button id="addTshirt" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractTshirt" class="qtyButtonSubtract">-</button></span>
+       </div>
+         <div id="subtotalDiv">
+          <span>USB qt:</span>
+          <span id="usbQty">0</span>
+          <span><button id="addUsb" class="qtyButtonAdd">+</button></span>
+          <span><button id="subtractUsb" class="qtyButtonSubtract">-</button></span>
+       </div>
+     </div>
+    <hr>
+      <div id="pricesDiv">
+        <div id="subtotalDiv">
+          <span>Subtotal:</span>
+          <span id="subTotal">$0.00</span>
+       </div>
+        <div id="taxDiv">
+          <span>Tax:</span>
+          <span>$4.25</span>
+       </div>
+       <div id="shippingDiv">
+          <span>shipping:</span>
+          <span>$8.00</span>
+       </div>
+        <div id="discountDiv">
+          <span>discount:</span>
+          <span id="discount">0%</span>
+     </div>
+       <div id="totalDiv">
+          <span>Total:</span>
+          <span id="total">$0.00</span>
+     </div>
+    </div>
+    <button id="checkoutBtn">Checkout</button>
+  </div> 
+  <div>
+    <center>
+  <form id="form">
+    <h3>Enter your email to check if you are eligible for a discount!</h3>
+    <input id="email" type="text" name="parentEmail" placeholder="Email"><span><input type="submit" name="submit" id="submit" value="Submit"/></span>
+  </form>
+</center>
+  <script src="catalog.js"></script>
+</body>
+</html>
+
+    
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

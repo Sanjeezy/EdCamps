@@ -1,0 +1,642 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body{
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+/* Nav Bar styles */
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background-color: #25D366;
+}
+
+#logo{
+
+  color:white;
+  position:fixed;
+  left:50px;
+}
+
+
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 40px;
+  line-height: 20px;
+}
+
+.menu-items {
+  display: inline-block;
+  position:fixed;
+  right:25px;
+  top:20px;
+}
+
+.menu-items li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 17px;
+
+
+}
+
+.menu-items a {
+  text-decoration: none;
+  color:white;
+  border-radius: 70px;
+}
+
+.fixed-nav-bar li a:hover {
+    background-color: white;
+    color:#25D366
+}
+
+h1{
+  font-size: 30px;
+  font-weight: italic;
+  margin-top: 50px;
+}
+
+#picture_boxes{
+  background-color: #25D366;
+  width:1000px;
+  height:300px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.images{
+  position: absolute;
+  display: none;
+  float:left;
+  width:300px;
+  height:275px;
+  margin: 7px;
+  margin-left: 10px;
+  position:relative;
+  left:7px;
+  padding:3px;
+  border:3px solid #021a40;
+  background-color:#CCCCFF;
+
+}
+
+
+#q_text{
+  visibility: hidden;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#q_div{
+  margin-top: 20px;
+  width:600px;
+  height:32px;
+}
+
+.btn{
+    position: relative;
+    background-color: #25D366;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#btn_div{
+  width:210px;
+  height:75px;
+}
+
+#a_div{
+  width:600px;
+  height:100px;
+  margin-top:50px;
+  position:relative;
+  left:110px;
+}
+
+#score_text{
+  display:none;
+  font-size: 30px;
+  font-style: italic;
+}
+
+#d_div{
+  background-color: #25D366;
+  width:600px;
+  height:150px;
+  padding: 10px;
+  padding-top: 70px;
+}
+
+#d_div #description{
+  color: white;
+}
+
+#picture_boxes #score_text{
+  color:white;
+  position:relative;
+  top:125px;
+}
+
+#desciption{
+  font-size: 16px;
+  font-style: italic;
+}
+
+#next_btn{
+  display: none;
+}
+
+#enter_btn{
+  display: none;
+}
+
+
+
+/* site: http://cssload.net/en/animated-text  */
+
+#inTurnFadingTextG{
+  width:510px;
+  margin:auto;
+}
+
+.inTurnFadingTextG{
+  color:rgb(0,0,0);
+  font-family:Arial;
+  font-size:53px;
+  text-decoration:none;
+  font-weight:normal;
+  font-style:normal;
+  float:left;
+  animation-name:bounce_inTurnFadingTextG;
+    -o-animation-name:bounce_inTurnFadingTextG;
+    -ms-animation-name:bounce_inTurnFadingTextG;
+    -webkit-animation-name:bounce_inTurnFadingTextG;
+    -moz-animation-name:bounce_inTurnFadingTextG;
+  animation-duration:4.28s;
+    -o-animation-duration:4.28s;
+    -ms-animation-duration:4.28s;
+    -webkit-animation-duration:4.28s;
+    -moz-animation-duration:4.28s;
+  animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+  animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+}
+
+#inTurnFadingTextG_1{
+  animation-delay:1.53s;
+    -o-animation-delay:1.53s;
+    -ms-animation-delay:1.53s;
+    -webkit-animation-delay:1.53s;
+    -moz-animation-delay:1.53s;
+}
+#inTurnFadingTextG_2{
+  animation-delay:1.83s;
+    -o-animation-delay:1.83s;
+    -ms-animation-delay:1.83s;
+    -webkit-animation-delay:1.83s;
+    -moz-animation-delay:1.83s;
+}
+#inTurnFadingTextG_3{
+  animation-delay:2.14s;
+    -o-animation-delay:2.14s;
+    -ms-animation-delay:2.14s;
+    -webkit-animation-delay:2.14s;
+    -moz-animation-delay:2.14s;
+}
+#inTurnFadingTextG_4{
+  animation-delay:2.44s;
+    -o-animation-delay:2.44s;
+    -ms-animation-delay:2.44s;
+    -webkit-animation-delay:2.44s;
+    -moz-animation-delay:2.44s;
+}
+#inTurnFadingTextG_5{
+  animation-delay:2.75s;
+    -o-animation-delay:2.75s;
+    -ms-animation-delay:2.75s;
+    -webkit-animation-delay:2.75s;
+    -moz-animation-delay:2.75s;
+}
+#inTurnFadingTextG_6{
+  animation-delay:3.06s;
+    -o-animation-delay:3.06s;
+    -ms-animation-delay:3.06s;
+    -webkit-animation-delay:3.06s;
+    -moz-animation-delay:3.06s;
+}
+#inTurnFadingTextG_7{
+  animation-delay:3.36s;
+    -o-animation-delay:3.36s;
+    -ms-animation-delay:3.36s;
+    -webkit-animation-delay:3.36s;
+    -moz-animation-delay:3.36s;
+}
+#inTurnFadingTextG_8{
+  animation-delay:3.67s;
+    -o-animation-delay:3.67s;
+    -ms-animation-delay:3.67s;
+    -webkit-animation-delay:3.67s;
+    -moz-animation-delay:3.67s;
+}
+#inTurnFadingTextG_9{
+  animation-delay:3.97s;
+    -o-animation-delay:3.97s;
+    -ms-animation-delay:3.97s;
+    -webkit-animation-delay:3.97s;
+    -moz-animation-delay:3.97s;
+}
+#inTurnFadingTextG_10{
+  animation-delay:4.28s;
+    -o-animation-delay:4.28s;
+    -ms-animation-delay:4.28s;
+    -webkit-animation-delay:4.28s;
+    -moz-animation-delay:4.28s;
+}
+#inTurnFadingTextG_11{
+  animation-delay:4.58s;
+    -o-animation-delay:4.58s;
+    -ms-animation-delay:4.58s;
+    -webkit-animation-delay:4.58s;
+    -moz-animation-delay:4.58s;
+}
+#inTurnFadingTextG_12{
+  animation-delay:4.89s;
+    -o-animation-delay:4.89s;
+    -ms-animation-delay:4.89s;
+    -webkit-animation-delay:4.89s;
+    -moz-animation-delay:4.89s;
+}
+#inTurnFadingTextG_13{
+  animation-delay:5.19s;
+    -o-animation-delay:5.19s;
+    -ms-animation-delay:5.19s;
+    -webkit-animation-delay:5.19s;
+    -moz-animation-delay:5.19s;
+}
+
+
+
+
+@keyframes bounce_inTurnFadingTextG{
+  0%{
+    color:rgb(0,0,0);
+  }
+
+  100%{
+    color:rgb(255,255,255);
+  }
+}
+
+@-o-keyframes bounce_inTurnFadingTextG{
+  0%{
+    color:rgb(0,0,0);
+  }
+
+  100%{
+    color:rgb(255,255,255);
+  }
+}
+
+@-ms-keyframes bounce_inTurnFadingTextG{
+  0%{
+    color:rgb(0,0,0);
+  }
+
+  100%{
+    color:rgb(255,255,255);
+  }
+}
+
+@-webkit-keyframes bounce_inTurnFadingTextG{
+  0%{
+    color:rgb(0,0,0);
+  }
+
+  100%{
+    color:rgb(255,255,255);
+  }
+}
+
+@-moz-keyframes bounce_inTurnFadingTextG{
+  0%{
+    color:rgb(0,0,0);
+  }
+
+  100%{
+    color:rgb(255,255,255);
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

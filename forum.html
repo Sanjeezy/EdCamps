@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="forum_style.css">
+
+        <!--JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ 
+
+
+        <!--Google fonts-->
+ <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+ </head>
+ 	<body>
+
+  <!-- Fixed navigation bar content -->
+       <nav class="fixed-nav-bar">
+     <h2 id="logo">EdCamps</h2>
+       <ul class="menu-items">
+       <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html">Home</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/index.html#activityImgDiv">About</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/register.html">Sign up</a></li>
+      <li><a href="http://students.engr.scu.edu/~stamizha/Final_Project/catalog.html">Store</a></li>
+      </ul>
+    </nav>
+
+
+	<center>
+		<div id="t_div">
+			<h1>Forum</h1>
+		</div>
+		<div id="forum_box">
+			<p><u>Please Leave us some feedback on your experience:</u></p>
+			<form id="form">
+			<div id="emailDiv">
+			<span>Email:
+          <input id="email" type="text" name="email">
+      </span>
+     	 </div>
+     	 	<div id="commentDiv">
+			<span><span id="commentHeader">Comments:</span>
+          <input id="comment" type="text" name="comment">
+      </span>
+     	 </div>
+         <div id="locationDiv">
+           <span>Campsite:
+        <select id="campLocation" type="text" name="location">
+                <option value="sf">San Francisco</option>
+                <option value="ny">New York</option>
+                <option value="la">Los Angeles</option>
+        </select>
+    	   </span>
+		</div>
+		<input type="submit" name="submit" id="submit" value="Submit" />
+		</form>
+		</div>
+	<button id="viewPosts" type="button">View Posts</button>
+	</center>
+
+	<center>
+	<div id="responseContainer">
+
+	</div>
+</center>
+
+
+	<script src="forum_script.js"></script>
+	
+
+	</body>
+</html>
